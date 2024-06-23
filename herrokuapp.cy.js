@@ -1,5 +1,5 @@
 describe('The Internet Herokuapp Tests', () => {
-    const baseUrl = 'https://the-internet.herokuapp.com';
+    const baseUrl = Cypress.config('baseUrl');
   
     it('Add/Remove Elements', () => {
       cy.visit(`${baseUrl}/add_remove_elements/`);
